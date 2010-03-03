@@ -80,3 +80,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'hellosite.polls',
 )
+
+try:
+    from local_settings import *
+except ImportError, exp:
+    pass
+
